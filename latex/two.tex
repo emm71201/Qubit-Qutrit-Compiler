@@ -1,0 +1,12 @@
+\documentclass[border=10px,varwidth=\maxdimen]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{quantikz2}
+\begin{document}
+\scalebox{0.7}{
+\begin{quantikz}[row sep={0.7cm,between origins}]
+\lstick{$p_0$ } & \gate{R_z(1.1641)} & \gate{R_y(0.6580)} & \gate{R_z(-0.0928)} & \qw  & \qw  & \qw  & \ctrl[wire style = {"1"}]{1} & \gate{R_x(-0.3806)} & \gate{R_z(-1.5708)} & \qw  & \qw  & \qw  & \ctrl[wire style = {"1"}]{1} & \gate{R_y(-0.0353)} & \qw  & \qw  & \qw  & \ctrl[wire style = {"1"}]{1} & \gate{R_z(-1.9591)} & \gate{R_y(2.2963)} & \gate{R_z(-0.6895)} & \qw  & \qw  & \qw  & \\
+\lstick{$p_1$ } & \qw  & \qw  & \qw  & \gate{R_z(0.6974)} & \gate{R_y(2.9444)} & \gate{R_z(-1.7928)}& \gate{X} & \qw  & \qw  & \gate{R_z(-0.8827)} & \gate{R_y(1.2520)} & \gate{R_z(-0.2522)}& \gate{X} & \qw  & \gate{R_z(2.0057)} & \gate{R_y(1.9404)} & \gate{R_z(-2.9753)}& \gate{X} & \qw  & \qw  & \qw  & \gate{R_z(2.0582)} & \gate{R_y(2.2822)} & \gate{R_z(1.9651)} & \\
+\end{quantikz}}
+\end{document}
