@@ -143,7 +143,7 @@ def make_circuit(root, register):
 
 
 #if __name__ == "__main__":
-    # matrix = np.genfromtxt("matrices/s108fft-108dim.csv", delimiter=",", dtype=np.complex_)
+    # matrix = np.genfromtxt("matrices/s108fft-108dim.csv", delimiter=",", dtype=np.complex128)
     # matrix = np.array(matrix)
     # register = [3,3,3,2,2]
 

@@ -34,7 +34,7 @@ def direct_sum(*matrices):
     total_cols = sum(matrix.shape[1] for matrix in matrices)
 
     # Initialize the result matrix with zeros
-    result = np.zeros((total_rows, total_cols), dtype=np.complex_)
+    result = np.zeros((total_rows, total_cols), dtype=np.complex128)
 
     # Place each matrix in its block-diagonal position
     row_start, col_start = 0, 0
@@ -52,7 +52,7 @@ def off_diagonal_direct_sum(*matrices):
     total_cols = sum(matrix.shape[1] for matrix in matrices)
 
     # Initialize the result matrix with zeros
-    result = np.zeros((total_rows, total_cols), dtype=np.complex_)
+    result = np.zeros((total_rows, total_cols), dtype=np.complex128)
 
     # Place each matrix in its off-diagonal position
     row_end, col_start = total_rows, 0

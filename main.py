@@ -20,7 +20,6 @@ if __name__ == "__main__":
         raise Exception("The general single qutrit operator is not yet supported.\nAt present, the last regsiter has to be qubit.")
 
 
-
     print("*" * 100, "\n")
     print(" "*40, "Hybrid Qubit - Qutrit Compiler ...\n")
     print("*"*100)
@@ -29,7 +28,7 @@ if __name__ == "__main__":
     print("\n\t\tb. Registers: ", register)
 
     try:
-        matrix = np.genfromtxt("matrices/s108fft-108dim.csv", delimiter=",", dtype=np.complex_)
+        matrix = np.genfromtxt(filename, delimiter=",", dtype=np.complex128)
         if np.prod(register) != matrix.shape[0]:
             raise Exception(f" Register dimension {np.prod(register)} does not match matrix dimension {matrix.shape[0]} ")
     except:
